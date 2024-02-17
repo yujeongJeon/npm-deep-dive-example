@@ -8,7 +8,9 @@
     "pre-commit": "lint-staged",
     "prettier": "prettier '**/*.{json,yaml,yml}' --check",
     "prettier:fix": "prettier '**/*.{json,yaml,yml}' --write",
-    "fix": "pnpm run prettier:fix"
+    "md": "markdownlint-cli2 '**/*.md' '#node_modules'",
+    "md:fix": "markdownlint-cli2-fix '**/*.md' '#node_modules'",
+    "fix": "pnpm run prettier:fix && pnpm run md:fix"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +23,7 @@
     "@titicaca/prettier-config-triple": "^1.1.0",
     "lefthook": "^1.6.1",
     "lint-staged": "^15.2.2",
+    "markdownlint-cli2": "^0.12.1",
     "prettier": "^3.2.5"
   }
 }
