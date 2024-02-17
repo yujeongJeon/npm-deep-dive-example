@@ -2,3 +2,7 @@ pre-commit:
   commands:
     lint:
       run: npm run pre-commit
+commit-msg:
+  commands:
+    commit-lint:
+      run: npx commitlint --edit "$1"
