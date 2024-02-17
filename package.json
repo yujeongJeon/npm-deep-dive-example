@@ -1,0 +1,26 @@
+{
+  "name": "npm-deep-dive-example",
+  "version": "1.0.0",
+  "description": "npm-deep-dive examples",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "lefthook install",
+    "pre-commit": "lint-staged",
+    "prettier": "prettier '**/*.{json,yaml,yml}' --check",
+    "prettier:fix": "prettier '**/*.{json,yaml,yml}' --write",
+    "fix": "pnpm run prettier:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "^18.17.10",
+    "pnpm": "^8.14.3"
+  },
+  "devDependencies": {
+    "@titicaca/prettier-config-triple": "^1.1.0",
+    "lefthook": "^1.6.1",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  }
+}
