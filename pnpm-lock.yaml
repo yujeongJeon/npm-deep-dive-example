@@ -29,6 +29,9 @@ devDependencies:
   prettier:
     specifier: ^3.2.5
     version: 3.2.5
+  typescript:
+    specifier: ^5.3.3
+    version: 5.3.3
 
 packages:
 
