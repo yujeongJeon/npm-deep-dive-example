@@ -10,7 +10,7 @@ module.exports = {
   plugins: [
     {
       rules: {
-        'gitmoji-rule': ({ header }) => {
+        'gitmoji-rule': ({ header, type }) => {
           const commit = header.trim()
           const [commitEmoji, ...rest] = commit.split(' ')
           const commitMessage = rest.join(' ').trim()
@@ -20,7 +20,8 @@ module.exports = {
           }
 
           const gitmoji = gitmojis.find(
-            (_gitmoji) => _gitmoji.emoji === commitEmoji,
+            (_gitmoji) =>
+              _gitmoji.emoji === commitEmoji || _gitmoji.code === type,
           )
 
           if (!gitmoji) {
