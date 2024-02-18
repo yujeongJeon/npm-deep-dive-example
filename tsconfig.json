@@ -22,9 +22,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "paths": {
-      "$/*": ["examples/*"]
-    },
     "noEmit": true,
     "incremental": true
   },

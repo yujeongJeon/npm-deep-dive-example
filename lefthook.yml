@@ -5,7 +5,7 @@ pre-commit:
     tsc:
       skip:
         - ref: main
-      glob: 'examples/**/*.{ts,tsx}'
+      glob: '**/*.{ts,tsx}'
       run: npx tsc --noEmit
 commit-msg:
   scripts:

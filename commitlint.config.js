@@ -3,16 +3,20 @@ const { gitmojis } = require('gitmojis')
 module.exports = {
   parserPreset: {
     parserOpts: {
-      headerPattern: /^(:\w+:) (.+)/,
-      headerCorrespondence: ['type', 'subject'],
+      headerPattern: /^(\[#[0-9]+\])?(\s?:\w+:\s?)?(.+)/,
+      headerCorrespondence: ['issue', 'type', 'subject'],
     },
   },
   plugins: [
     {
       rules: {
-        'gitmoji-rule': ({ header, type }) => {
+        'gitmoji-rule': ({ header, issue = '', type }) => {
           const commit = header.trim()
-          const [commitEmoji, ...rest] = commit.split(' ')
+
+          const [commitEmoji, ...rest] = commit
+            .replace(issue, '')
+            .trim()
+            .split(' ')
           const commitMessage = rest.join(' ').trim()
 
           if (!commitEmoji) {

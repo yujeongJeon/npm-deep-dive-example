@@ -48,7 +48,7 @@ then
     fi
 
     if [ "$pr_type" == "$issue_feature_prefix" ]; then
-        sed -i.bak "1s/${first_line}/$prefix_type: [#$issue_number] $message/" $COMMIT_MSG_FILE
+        sed -i.bak "1s/${first_line}/[#$issue_number] $first_line/" $COMMIT_MSG_FILE
         exit 0
     fi
 fi
