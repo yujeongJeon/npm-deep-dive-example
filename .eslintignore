@@ -58,3 +58,5 @@ pnpm-lock.yaml
 dist
 
 docs/
+
+chapter0/
