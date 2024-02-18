@@ -1,0 +1,48 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "no-relative-import-paths"],
+  "extends": ["prettier"],
+  "rules": {
+    "curly": "error",
+    "eqeqeq": ["error", "smart"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-unused-vars": ["off"],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_",
+        "destructuredArrayIgnorePattern": "^_",
+      },
+    ],
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/adjacent-overload-signatures": "error",
+    "no-restricted-imports": [
+      "error",
+      {
+        "name": "lodash",
+        "message": "Import [module] from lodash/[module] instead",
+      },
+    ],
+    "no-relative-import-paths/no-relative-import-paths": [
+      "error",
+      { "allowSameFolder": false, "rootDir": "src", "prefix": "$" },
+    ],
+    "no-console": "warn",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Use isomorphic-logger instead of console object ",
+      },
+    ],
+    "newline-before-return": "error",
+    "newline-after-var": "error",
+    "prefer-const": "error",
+  },
+  "env": {
+    "jest": true,
+  },
+}
