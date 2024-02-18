@@ -12,6 +12,6 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "query-string": "^5.1.1"
+    "query-string": "^8.2.0"
   }
 }
