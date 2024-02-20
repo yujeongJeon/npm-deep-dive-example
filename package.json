@@ -6,13 +6,8 @@
   "scripts": {
     "prepare": "lefthook install",
     "pre-commit": "lint-staged",
-    "prettier": "prettier '**/*.{json,yaml,yml}' --check",
-    "prettier:fix": "prettier '**/*.{json,yaml,yml}' --write",
     "md": "markdownlint-cli2 '**/*.md' '#node_modules'",
-    "md:fix": "markdownlint-cli2 --fix '**/*.md' '#node_modules'",
-    "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
-    "lint:fix": "pnpm run lint --fix",
-    "fix": "pnpm run prettier:fix && pnpm run md:fix && pnpm run lint:fix"
+    "md:fix": "markdownlint-cli2 --fix '**/*.md' '#node_modules'"
   },
   "keywords": [],
   "author": "",
@@ -24,18 +19,10 @@
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.2",
-    "@titicaca/prettier-config-triple": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-no-relative-import-paths": "^1.5.3",
     "gitmojis": "^3.14.0",
     "lefthook": "^1.6.1",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.1",
-    "prettier": "^3.2.5",
     "typescript": "^5.3.3"
   }
 }
