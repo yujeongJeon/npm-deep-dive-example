@@ -24,5 +24,6 @@
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.1",
     "typescript": "^5.3.3"
-  }
+  },
+  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
 }
