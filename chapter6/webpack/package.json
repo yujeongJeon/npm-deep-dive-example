@@ -1,8 +1,5 @@
 {
   "name": "webpack-example",
-  "version": "1.0.0",
-  "description": "A simple example using Webpack, SCSS, and Webpack Dev Server",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "webpack serve --config webpack.config.js"
