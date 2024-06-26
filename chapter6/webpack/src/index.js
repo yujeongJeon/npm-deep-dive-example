@@ -9,4 +9,4 @@ imgElement.classList.add('logo')
 
 document.body.insertBefore(imgElement, document.body.firstChild)
 
-console.log('Webpack and SCSS Example with Dev Server')
+console.log('Webpack Example with Dev Server')
