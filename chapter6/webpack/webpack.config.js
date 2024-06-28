@@ -39,7 +39,7 @@ module.exports = (env, argv) => {
     ],
     devServer: {
       static: path.resolve(__dirname, 'dist'),
-      compress: true,
+      compress: false,
       port: 9000,
       open: true,
     },

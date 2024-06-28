@@ -1,7 +1,7 @@
 {
   "name": "webpack-example",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js --mode=production",
     "start": "webpack serve --config webpack.config.js"
   },
   "devDependencies": {
