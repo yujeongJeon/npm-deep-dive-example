@@ -1,0 +1,1 @@
+export const mergedObject = (object1 = {}, object2 = {}) => ({ ...object1, ...object2 });

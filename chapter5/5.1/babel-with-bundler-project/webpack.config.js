@@ -13,6 +13,8 @@ const htmlPlugin = new HtmlWebpackPlugin({
       <title>Template Example</title>
     </head>
     <body>
+    <div id="loading">Loading...</div>
+    <div id="hidden" style="display: none;">이 div 요소는 3초후에 보이는 div 요소입니다.</div>
     </body>
     </html>
   `,
