@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@yceffort/utils':
+    specifier: npm:@jsr/yceffort__utils@^0.1.0
+    version: /@jsr/yceffort__utils@0.1.0
+
+packages:
+
+  /@jsr/yceffort__utils@0.1.0:
+    resolution: {integrity: sha512-6FosGHcUgTn1AtyWTy8fSzzLvlMTP8watIUJDK+7NcuQMa46PqfqLNr1uCVOkg2uaFQxCehH+RqPM942X6izzg==, tarball: https://npm.jsr.io/~/11/@jsr/yceffort__utils/0.1.0.tgz}
+    dev: false
