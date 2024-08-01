@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@yceffort/utils": "npm:@jsr/yceffort__utils@^0.1.0"
+    "@yceffort/utils": "npm:@jsr/yceffort__utils@^0.2.1"
   }
 }

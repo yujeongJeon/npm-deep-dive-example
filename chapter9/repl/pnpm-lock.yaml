@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@yceffort/utils':
-    specifier: npm:@jsr/yceffort__utils@^0.1.0
-    version: /@jsr/yceffort__utils@0.1.0
+    specifier: npm:@jsr/yceffort__utils@^0.2.1
+    version: /@jsr/yceffort__utils@0.2.1
 
 packages:
 
-  /@jsr/yceffort__utils@0.1.0:
-    resolution: {integrity: sha512-6FosGHcUgTn1AtyWTy8fSzzLvlMTP8watIUJDK+7NcuQMa46PqfqLNr1uCVOkg2uaFQxCehH+RqPM942X6izzg==, tarball: https://npm.jsr.io/~/11/@jsr/yceffort__utils/0.1.0.tgz}
+  /@jsr/yceffort__utils@0.2.1:
+    resolution: {integrity: sha512-slp+ALdVbSgRIGMCxs/8OoLQeAq4fJMrhm666V3AEf2oVbJR1i5Dwle56U0smIae89U5YsumuxW2PjBuwuV77w==, tarball: https://npm.jsr.io/~/11/@jsr/yceffort__utils/0.2.1.tgz}
     dev: false
