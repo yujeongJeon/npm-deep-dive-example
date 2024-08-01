@@ -1,6 +1,6 @@
 import { isArrayLike } from "./internal";
 
-export function size(collection: unknown): number {
+export default function size(collection: unknown): number {
   if (collection == null) {
     return 0;
   }
