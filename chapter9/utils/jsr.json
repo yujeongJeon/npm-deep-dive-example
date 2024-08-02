@@ -1,11 +1,12 @@
 {
   "$schema": "https://jsr.io/schema/config-file.v1.json",
   "name": "@yceffort/utils",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "exports": {
     ".": "./mod.ts",
     "./size": "./size.ts",
     "./isEmpty": "./isEmpty.ts",
-    "./toLowerCase": "./toLowerCase.ts"
+    "./toLowerCase": "./toLowerCase.ts",
+    "./toUpperCase": "./toUpperCase.ts"
   }
 }
