@@ -1,4 +1,4 @@
 export { default as size } from "./size";
 export { default as isEmpty } from "./isEmpty";
 export { default as toLowerCase } from "./toLowerCase";
-export { default as toUpperCase } from "./toUpperCase";
+export { default as toCamelCase } from "./toCamelCase";
