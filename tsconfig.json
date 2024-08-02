@@ -25,6 +25,6 @@
     "noEmit": true,
     "incremental": true
   },
-  "exclude": ["node_modules", "commitlint.config.js"],
+  "exclude": ["node_modules", "commitlint.config.js", "chapter9/"],
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
 }
