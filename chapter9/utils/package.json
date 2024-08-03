@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@luca/cases": "npm:@jsr/luca__cases@^1.0.0",
+    "rambda": "^9.2.1"
+  }
+}

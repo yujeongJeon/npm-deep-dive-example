@@ -1,0 +1,27 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@yceffort/utils':
+    specifier: npm:@jsr/yceffort__utils@^0.4.0
+    version: /@jsr/yceffort__utils@0.4.0
+
+packages:
+
+  /@jsr/luca__cases@1.0.0:
+    resolution: {integrity: sha512-h3nOT3+JVCXBsLd+st9cytZO+iqJYTTsm3rOrtZZXBgJ0nzBA5mDR9dI3k8wBDQ5AAqqJjD3UkhLxoRCEKwzgg==, tarball: https://npm.jsr.io/~/11/@jsr/luca__cases/1.0.0.tgz}
+    dev: false
+
+  /@jsr/yceffort__utils@0.4.0:
+    resolution: {integrity: sha512-YTMOyTSzjan9egXqLm20xB4NLDtVRqPCLxPz4O4+yFW9DUvsxh6o03xwO5J1fW/thCTX6UYryODtj5lakhF1rA==, tarball: https://npm.jsr.io/~/11/@jsr/yceffort__utils/0.4.0.tgz}
+    dependencies:
+      '@jsr/luca__cases': 1.0.0
+      rambda: 9.2.1
+    dev: false
+
+  /rambda@9.2.1:
+    resolution: {integrity: sha512-6Dp+QQVQuAuhwBlbIvL2FjJVHCKF29W+n9ca/BMTVDqpj+Q7KKqUh7UAINEna8aaB2/oRvPuL5hViCTQARa70Q==}
+    dev: false
