@@ -7,6 +7,6 @@
     "./size": "./size.ts",
     "./isEmpty": "./isEmpty.ts",
     "./toLowerCase": "./toLowerCase.ts",
-    "./toUpperCase": "./toUpperCase.ts"
+    "./toCamelCase": "./toCamelCase.ts"
   }
 }
