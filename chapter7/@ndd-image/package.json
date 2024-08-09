@@ -3,9 +3,9 @@
     "name": "@ndd/react-image",
     "version": "0.0.1",
     "description": "A comprehensive image utility kit for Next.js, and React",
-    "main": "dist/cjs/index.js",
-    "module": "dist/esm/index.js",
-    "types": "dist/cjs/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/cjs/index.d.ts",
     "exports": {
         ".": {
             "import": "./dist/esm/index.js",
