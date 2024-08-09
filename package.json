@@ -17,7 +17,6 @@
     "pnpm": "^9.6.0"
   },
   "devDependencies": {
-    "gitmojis": "^3.14.0",
     "lefthook": "^1.6.1",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.1",

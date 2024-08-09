@@ -8,9 +8,6 @@ importers:
 
   .:
     devDependencies:
-      gitmojis:
-        specifier: ^3.14.0
-        version: 3.14.0
       lefthook:
         specifier: ^1.6.1
         version: 1.6.1
@@ -125,9 +122,6 @@ packages:
   get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
-
-  gitmojis@3.14.0:
-    resolution: {integrity: sha512-wPdXxKWfp2dJE6/ch8TDJjYdXvr+4uV67AEcbImj5QC4DmP6Byje1goJL8WgMPFnLY63eadK6oxtnSjdRFzS6g==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -508,8 +502,6 @@ snapshots:
   get-east-asian-width@1.2.0: {}
 
   get-stream@8.0.1: {}
-
-  gitmojis@3.14.0: {}
 
   glob-parent@5.1.2:
     dependencies:
