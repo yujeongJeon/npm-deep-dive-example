@@ -5,12 +5,5 @@ pre-commit:
     tsc:
       skip:
         - ref: main
-      glob: '**/*.{ts,tsx}'
+      glob: "**/*.{ts,tsx}"
       run: npx tsc --noEmit
-commit-msg:
-  scripts:
-    'add-issue-to-commit.sh':
-      runner: bash
-  commands:
-    commit-lint:
-      run: npx commitlint --edit "$1"
