@@ -2,7 +2,7 @@
   "config": {
     "MD013": false,
     "MD024": { "siblings_only": true },
-    "MD053": false,
+    "MD053": false
   },
-  "ignores": ["**/node_modules/**"],
+  "ignores": ["**/node_modules/**"]
 }
