@@ -13,17 +13,14 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "^18.17.10",
-    "pnpm": "^8.14.3"
+    "node": "^20.13.1",
+    "pnpm": "^9.6.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.6.1",
-    "@commitlint/config-conventional": "^18.6.2",
-    "gitmojis": "^3.14.0",
     "lefthook": "^1.6.1",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.1",
     "typescript": "^5.3.3"
   },
-  "packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
+  "packageManager": "pnpm@9.6.0"
 }

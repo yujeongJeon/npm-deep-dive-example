@@ -1,0 +1,76 @@
+{
+    "$schema": "https://json.schemastore.org/package",
+    "name": "@ndd/react-image",
+    "version": "0.0.1",
+    "description": "A comprehensive image utility kit for Next.js, and React",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
+    "keywords": [
+        "image",
+        "utils",
+        "nodejs",
+        "nextjs",
+        "react",
+        "resize",
+        "crop",
+        "optimize"
+    ],
+    "homepage": "https://github.com/yourusername/image-utils-kit#readme",
+    "bugs": {
+        "url": "https://github.com/yourusername/image-utils-kit/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/image-utils-kit.git"
+    },
+    "license": "MIT",
+    "author": "yceffort <root@yceffort.kr>",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "lint": "eslint '**/*.{js,jsx,ts,tsx}'",
+        "lint:fix": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
+        "prettier": "prettier --check '**/*.{ts,tsx,js,mjs,cjs,jsx,json}'",
+        "prettier:fix": "prettier --write '**/*.{ts,tsx,js,mjs,cjs,jsx,json}'",
+        "md": "markdownlint '**/*.md'",
+        "md:fix": "markdownlint --fix '**/*.md'"
+    },
+    "devDependencies": {
+        "@naverpay/editorconfig": "^0.0.4",
+        "@naverpay/eslint-config": "^1.0.7",
+        "@naverpay/markdown-lint": "^0.0.3",
+        "@naverpay/prettier-config": "^1.0.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^18.19.43",
+        "@types/react": "^18.3.3",
+        "@types/sharp": "^0.31.1",
+        "jest": "^29.7.0",
+        "next": "^13.5.6",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "typescript": "^5.5.4"
+    },
+    "peerDependencies": {
+        "next": "^13.0.0",
+        "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    },
+    "peerDependenciesMeta": {
+        "next": {
+            "optional": true
+        }
+    },
+    "packageManager": "pnpm@9.6.0",
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
