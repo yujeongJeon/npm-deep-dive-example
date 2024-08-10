@@ -62,7 +62,11 @@
         "md": "markdownlint '**/*.md'",
         "md:fix": "markdownlint --fix '**/*.md'"
     },
+    "dependencies": {
+        "@babel/runtime-corejs3": "^7.14.8"
+    },
     "devDependencies": {
+        "@babel/plugin-transform-runtime": "^7.24.7",
         "@babel/preset-env": "^7.25.3",
         "@naverpay/editorconfig": "^0.0.4",
         "@naverpay/eslint-config": "^1.0.7",
@@ -97,10 +101,5 @@
     "packageManager": "pnpm@9.6.0",
     "engines": {
         "node": ">=14.0.0"
-    },
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-    ]
+    }
 }

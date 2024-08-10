@@ -19,14 +19,27 @@ export default defineConfig({
     plugins: [
         react(),
         babel({
-            babelHelpers: 'bundled',
+            babelHelpers: 'runtime',
             presets: [
                 [
                     '@babel/preset-env',
                     {
-                        targets: '> 0.25%, not dead',
-                        useBuiltIns: 'usage',
-                        corejs: 3,
+                        // targets: '> 0.25%, not dead',
+                        // 오래된 버전으로 테스트
+                        targets: 'ie 11, chrome 49, firefox 52, safari 9',
+                        useBuiltIns: false,
+                    },
+                ],
+            ],
+            plugins: [
+                [
+                    '@babel/plugin-transform-runtime',
+                    {
+                        corejs: {version: 3, proposals: false},
+                        absoluteRuntime: false,
+                        useESModules: false,
+                        helpers: true,
+                        regenerator: true,
                     },
                 ],
             ],
@@ -53,7 +66,12 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: [...Object.keys(pkg.peerDependencies), 'next/image', 'react/jsx-runtime'],
+            external: [
+                ...Object.keys(pkg.peerDependencies),
+                'next/image',
+                'react/jsx-runtime',
+                /@babel\/runtime-corejs3/,
+            ],
             output: [
                 {
                     format: 'es',
