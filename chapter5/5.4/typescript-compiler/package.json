@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "core-js": "^3.38.0",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
   }
