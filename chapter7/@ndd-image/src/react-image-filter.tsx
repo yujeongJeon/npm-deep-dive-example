@@ -1,7 +1,7 @@
 import {useState, useCallback, CSSProperties, useMemo, memo, ImgHTMLAttributes, FC} from 'react'
 
-import {ImageFilter} from './type'
-import {getFilter} from './utils'
+import {ImageFilter} from '$types'
+import {getFilter} from '$utils'
 
 export type ReactImageFilterProps = ImgHTMLAttributes<HTMLImageElement> & ImageFilter
 export const ReactImageFilter: FC<ReactImageFilterProps> = memo(

@@ -21,7 +21,9 @@
         "jsx": "react-jsx",
         "allowJs": true,
         "paths": {
-            "*": ["src/*"]
+            "$": ["src/*"],
+            "$types": ["src/types/index.ts"],
+            "$utils": ["src/utils/index.ts"]
         }
     },
     "include": ["src/**/*"],

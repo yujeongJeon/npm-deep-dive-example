@@ -3,8 +3,8 @@
 import Image, {ImageProps} from 'next/image'
 import {useState, useCallback, CSSProperties, useMemo, memo} from 'react'
 
-import {ImageFilter} from './type'
-import {getFilter} from './utils'
+import {ImageFilter} from '$types'
+import {getFilter} from '$utils'
 
 export type NextImageFilterProps = Omit<ImageProps, 'style'> & ImageFilter
 
