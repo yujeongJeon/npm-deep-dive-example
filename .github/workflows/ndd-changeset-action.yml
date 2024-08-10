@@ -53,7 +53,7 @@ jobs:
           version: pnpm ci:version
           commit: ":rocket: update versions"
           title: ":rocket: update versions"
-          publish: pnpm ci:publish
+          publish: pnpm publish --access=public
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
