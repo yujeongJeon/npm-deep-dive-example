@@ -1,8 +1,8 @@
 {
     "$schema": "https://json.schemastore.org/package",
     "name": "@ndive/react-image",
-    "version": "0.0.1",
-    "description": "A comprehensive image utility kit for Next.js, and React",
+    "version": "0.1.0",
+    "description": "A comprehensive image utility kit for Next.js, and React. This package is created for learning purposes. Caution is advised when using in production.",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "types": "./dist/cjs/index.d.ts",
