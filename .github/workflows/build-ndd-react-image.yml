@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "chapter7/@ndd-react-image/**"
+    branches:
+      - main
   pull_request:
     paths:
       - "chapter7/@ndd-react-image/**"
