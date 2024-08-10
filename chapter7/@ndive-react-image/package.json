@@ -1,8 +1,8 @@
 {
     "$schema": "https://json.schemastore.org/package",
-    "name": "@ndd/react-image",
-    "version": "0.0.1",
-    "description": "A comprehensive image utility kit for Next.js, and React",
+    "name": "@ndive/react-image",
+    "version": "0.1.0",
+    "description": "A comprehensive image utility kit for Next.js, and React. This package is created for learning purposes. Caution is advised when using in production.",
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
     "types": "./dist/cjs/index.d.ts",
@@ -35,19 +35,29 @@
         "react",
         "filter"
     ],
-    "homepage": "https://github.com/yourusername/image-utils-kit#readme",
+    "homepage": "https://github.com/yujeongJeon/npm-deep-dive-example/tree/main/chapter7/@ndive-react-image#readme",
     "bugs": {
-        "url": "https://github.com/yourusername/image-utils-kit/issues"
+        "url": "https://github.com/yujeongJeon/npm-deep-dive-example/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/image-utils-kit.git"
+        "url": "https://github.com/yujeongJeon/npm-deep-dive-example.git"
     },
     "license": "MIT",
     "author": {
         "email": "root@yceffort.kr",
         "name": "yceffort"
     },
+    "contributors": [
+        {
+            "email": "workingnewjeong@gmail.com",
+            "name": "yujeongJeon"
+        },
+        {
+            "email": "root@yceffort.kr",
+            "name": "yceffort"
+        }
+    ],
     "files": [
         "dist",
         "README.md"
