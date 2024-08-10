@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "outDir": "dist",
+    "module": "CommonJS",
+    "lib": ["DOM", "ES6"],
+    "importHelpers": true
+  },
+  "include": ["src/*"]
+}

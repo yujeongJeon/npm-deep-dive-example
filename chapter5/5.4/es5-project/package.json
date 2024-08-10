@@ -1,0 +1,15 @@
+{
+  "name": "typescript-compiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "tslib": "^2.6.3",
+    "typescript": "^5.5.4"
+  }
+}
