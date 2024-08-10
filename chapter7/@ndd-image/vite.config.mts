@@ -1,6 +1,7 @@
 import {resolve, dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
 
+import {babel} from '@rollup/plugin-babel'
 import react from '@vitejs/plugin-react'
 // types 가 없음.
 // 1. 타입을 따로 만들어서 설치하는 예제를 보여준다
@@ -17,6 +18,21 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
     plugins: [
         react(),
+        babel({
+            babelHelpers: 'bundled',
+            presets: [
+                [
+                    '@babel/preset-env',
+                    {
+                        targets: '> 0.25%, not dead',
+                        useBuiltIns: 'usage',
+                        corejs: 3,
+                    },
+                ],
+            ],
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            exclude: 'node_modules/**',
+        }),
         tsconfigPaths(),
         dts({
             include: ['src'],
