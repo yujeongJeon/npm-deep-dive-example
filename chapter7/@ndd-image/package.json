@@ -31,12 +31,9 @@
     "keywords": [
         "image",
         "utils",
-        "nodejs",
         "nextjs",
         "react",
-        "resize",
-        "crop",
-        "optimize"
+        "filter"
     ],
     "homepage": "https://github.com/yourusername/image-utils-kit#readme",
     "bugs": {
@@ -47,7 +44,10 @@
         "url": "https://github.com/yourusername/image-utils-kit.git"
     },
     "license": "MIT",
-    "author": "yceffort <root@yceffort.kr>",
+    "author": {
+        "email": "root@yceffort.kr",
+        "name": "yceffort"
+    },
     "files": [
         "dist",
         "README.md"
