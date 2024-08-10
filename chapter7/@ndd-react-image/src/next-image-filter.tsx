@@ -3,15 +3,12 @@
 import Image, {ImageProps} from 'next/image'
 import {useState, useCallback, CSSProperties, useMemo, memo} from 'react'
 
-interface ImageFilterProps extends Omit<ImageProps, 'style'> {
-    grayscale?: number
-    sepia?: number
-    brightness?: number
-    contrast?: number
-    blur?: number
-}
+import {ImageFilter} from '$types'
+import {getFilter} from '$utils'
 
-export const ImageFilter: React.FC<ImageFilterProps> = memo(
+export type NextImageFilterProps = Omit<ImageProps, 'style'> & ImageFilter
+
+export const NextImageFilter: React.FC<NextImageFilterProps> = memo(
     ({src, alt, width, height, grayscale = 0, sepia = 0, brightness = 100, contrast = 100, blur = 0, ...props}) => {
         const [imageError, setImageError] = useState(false)
 
@@ -20,18 +17,9 @@ export const ImageFilter: React.FC<ImageFilterProps> = memo(
         }, [])
 
         const filterStyle: CSSProperties = useMemo(
-            () => ({
-                filter: `
-      grayscale(${grayscale}%)
-      sepia(${sepia}%)
-      brightness(${brightness}%)
-      contrast(${contrast}%)
-      blur(${blur}px)
-    `,
-            }),
+            () => getFilter({grayscale, sepia, brightness, contrast, blur}),
             [grayscale, sepia, brightness, contrast, blur],
         )
-
         if (imageError) {
             return <div>Image failed to load</div>
         }
