@@ -1,4 +1,4 @@
-name: Build @ndd-react-image
+name: Build and Lint @ndd-react-image
 
 on:
   push:
@@ -9,9 +9,8 @@ on:
       - "chpater7/@ndd-react-image/**"
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
@@ -28,6 +27,47 @@ jobs:
         working-directory: chpater7/@ndd-react-image
         run: pnpm install --frozen-lockfile
 
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: chpater7/@ndd-react-image/node_modules
+          key: ${{ runner.OS }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.OS }}-pnpm-
+
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+      - name: Restore cached dependencies
+        uses: actions/cache@v4
+        with:
+          path: chpater7/@ndd-react-image/node_modules
+          key: ${{ runner.OS }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Build
         working-directory: chpater7/@ndd-react-image
         run: pnpm run build
+
+  lint:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Restore cached dependencies
+        uses: actions/cache@v4
+        with:
+          path: chpater7/@ndd-react-image/node_modules
+          key: ${{ runner.OS }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - name: Lint
+        working-directory: chpater7/@ndd-react-image
+        run: pnpm run lint
+      - name: Prettier
+        working-directory: chpater7/@ndd-react-image
+        run: pnpm run format:check
