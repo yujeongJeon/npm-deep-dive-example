@@ -78,6 +78,7 @@
     "devDependencies": {
         "@babel/plugin-transform-runtime": "^7.24.7",
         "@babel/preset-env": "^7.25.3",
+        "@changesets/cli": "^2.27.7",
         "@naverpay/editorconfig": "^0.0.4",
         "@naverpay/eslint-config": "^1.0.7",
         "@naverpay/markdown-lint": "^0.0.3",
