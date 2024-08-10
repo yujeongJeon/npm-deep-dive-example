@@ -20,8 +20,7 @@ jobs:
           node-version: "20"
 
       - name: Enable Corepack
-        run: |
-          corepack enable
+        run: corepack enable
 
       - name: Install dependencies
         working-directory: chapter7/@ndd-react-image
@@ -39,10 +38,12 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Enable Corepack
+        run: corepack enable
       - name: Restore cached dependencies
         uses: actions/cache@v4
         with:
@@ -60,6 +61,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Enable Corepack
+        run: corepack enable
       - name: Restore cached dependencies
         uses: actions/cache@v4
         with:
@@ -70,4 +73,4 @@ jobs:
         run: pnpm run lint
       - name: Prettier
         working-directory: chapter7/@ndd-react-image
-        run: pnpm run format:check
+        run: pnpm run prettier
