@@ -1,9 +1,9 @@
 {
     "$schema": "http://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "target": "es2018",
-        "module": "commonjs",
-        "lib": ["es2018", "dom"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "lib": ["ESNext", "dom"],
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
