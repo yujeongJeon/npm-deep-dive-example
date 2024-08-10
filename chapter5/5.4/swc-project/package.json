@@ -1,0 +1,21 @@
+{
+  "name": "swc-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "swc src -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.10",
+    "@types/node": "^22.2.0"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.5.12",
+    "core-js": "^3.38.0",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://swc.rs/schema.json",
+  "jsc": {
+    "externalHelpers": true,
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": false,
+      "decorators": true
+    }
+  },
+  "module": {
+    "type": "commonjs" // CommonJS 모듈 시스템으로 변환
+  },
+  "env": {
+    "targets": ["ie >= 11"],
+    "mode": "usage",
+    "coreJs": "3.38"
+  }
+  //   "minify": true
+}
