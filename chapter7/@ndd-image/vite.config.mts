@@ -38,6 +38,7 @@ export default defineConfig({
             include: ['src'],
             exclude: ['src/**/*.test.ts', 'src/**/*.test.tsx'],
             outDir: 'dist/types',
+            rollupTypes: true,
         }),
     ],
     build: {

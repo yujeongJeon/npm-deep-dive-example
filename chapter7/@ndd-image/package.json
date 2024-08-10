@@ -15,12 +15,12 @@
         "./react": {
             "import": "./dist/esm/react.js",
             "require": "./dist/cjs/react.js",
-            "types": "./dist/types/react-image-filter.d.ts"
+            "types": "./dist/types/react.d.ts"
         },
         "./next": {
             "import": "./dist/esm/next.js",
             "require": "./dist/cjs/next.js",
-            "types": "./dist/types/next-image-filter.d.ts"
+            "types": "./dist/types/next.d.ts"
         },
         "./utils": {
             "import": "./dist/esm/utils.js",
