@@ -1,9 +1,0 @@
-pre-commit:
-  commands:
-    # lint:
-    #   run: npm run pre-commit
-    # tsc:
-    #   skip:
-    #     - ref: main
-    #   glob: "**/*.{ts,tsx}"
-    #   run: npx tsc --noEmit
