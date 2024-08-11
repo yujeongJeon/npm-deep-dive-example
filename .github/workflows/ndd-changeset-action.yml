@@ -50,6 +50,7 @@ jobs:
       - name: Create and publish versions
         uses: changesets/action@v1
         with:
+          cwd: "./chapter7/@ndive-react-image"
           version: pnpm ci:version
           commit: ":rocket: update versions"
           title: ":rocket: update versions"
