@@ -53,10 +53,9 @@ jobs:
         uses: changesets/action@v1
         with:
           cwd: "./chapter7/@ndive-react-image"
-          version: pnpm version
+          publish: pnpm release
           commit: "🚀 update versions"
-          title: "📦 update versions"
-          publish: pnpm publish --access=public
+          title: "📦 update versions"          
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
