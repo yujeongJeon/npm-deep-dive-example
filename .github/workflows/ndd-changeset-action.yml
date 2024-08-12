@@ -51,7 +51,7 @@ jobs:
         uses: changesets/action@v1
         with:
           cwd: "./chapter7/@ndive-react-image"
-          version: pnpm ci:version
+          version: pnpm version
           commit: ":rocket: update versions"
           title: ":rocket: update versions"
           publish: pnpm publish --access=public
