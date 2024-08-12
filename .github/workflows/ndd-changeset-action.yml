@@ -43,9 +43,11 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      
+        working-directory: ./chapter7/@ndive-react-image
+
       - name: build
         run: pnpm run build
+        working-directory: ./chapter7/@ndive-react-image
 
       - name: Create and publish versions
         uses: changesets/action@v1
