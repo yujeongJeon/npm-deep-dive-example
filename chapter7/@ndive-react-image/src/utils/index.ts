@@ -17,13 +17,8 @@ export function getFilter({
     contrast?: number
     blur?: number
 } = {}): CSSFilterProperties {
-    const filterValue: CSSFilterValue = `
-      grayscale(${grayscale}%)
-      sepia(${sepia}%)
-      brightness(${brightness}%)
-      contrast(${contrast}%)
-      blur(${blur}px)
-    `.trim()
+    const filterValue: CSSFilterValue =
+        `grayscale(${grayscale}%) sepia(${sepia}%) brightness(${brightness}%) contrast(${contrast}%) blur(${blur}px)`.trim()
 
     return {
         filter: filterValue,
