@@ -54,6 +54,9 @@ jobs:
       - name: Build
         working-directory: chapter7/@ndive-react-image
         run: pnpm run build
+      - name: Test
+        working-directory: chapter7/@ndive-react-image
+        run: pnpm run test
 
   lint:
     needs: setup
