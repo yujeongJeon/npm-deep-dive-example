@@ -71,7 +71,8 @@
         "prettier": "prettier --check '**/*.{ts,tsx,js,mjs,cjs,jsx,json}'",
         "prettier:fix": "prettier --write '**/*.{ts,tsx,js,mjs,cjs,jsx,json}'",
         "md": "markdownlint '**/*.md'",
-        "md:fix": "markdownlint --fix '**/*.md'"
+        "md:fix": "markdownlint --fix '**/*.md'",
+        "test": "vitest run"
     },
     "dependencies": {
         "@babel/runtime-corejs3": "^7.14.8"
@@ -97,6 +98,7 @@
         "rollup-preserve-directives": "^1.1.1",
         "typescript": "^5.5.4",
         "vite": "^5.4.0",
+        "vitest": "^2.0.5",
         "vite-plugin-dts": "^4.0.2",
         "vite-tsconfig-paths": "^5.0.1"
     },
