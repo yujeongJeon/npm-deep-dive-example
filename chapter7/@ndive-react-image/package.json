@@ -59,8 +59,7 @@
         }
     ],
     "files": [
-        "dist",
-        "README.md"
+        "dist"
     ],
     "scripts": {
         "build": "pnpm run clean && vite build",
@@ -75,7 +74,7 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@babel/runtime-corejs3": "^7.14.8"
+        "@babel/runtime-corejs3": "^7.25.0"
     },
     "devDependencies": {
         "@babel/plugin-transform-runtime": "^7.24.7",
