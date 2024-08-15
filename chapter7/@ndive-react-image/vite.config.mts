@@ -24,10 +24,7 @@ export default defineConfig({
                 [
                     '@babel/preset-env',
                     {
-                        // targets: '> 0.25%, not dead',
-                        // 오래된 버전으로 테스트
-                        targets: 'ie 11, chrome 49, firefox 52, safari 9',
-                        useBuiltIns: false,
+                        debug: true,
                     },
                 ],
             ],
@@ -35,11 +32,7 @@ export default defineConfig({
                 [
                     '@babel/plugin-transform-runtime',
                     {
-                        corejs: {version: 3, proposals: false},
-                        absoluteRuntime: false,
-                        useESModules: false,
-                        helpers: true,
-                        regenerator: true,
+                        corejs: {version: 3, proposals: true},
                     },
                 ],
             ],
