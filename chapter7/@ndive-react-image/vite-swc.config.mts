@@ -1,8 +1,7 @@
 import {resolve, dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
 
-import {babel} from '@rollup/plugin-babel'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import preserveDirectives from 'rollup-preserve-directives'
 import {defineConfig} from 'vite'
 import dts from 'vite-plugin-dts'
@@ -15,27 +14,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
     plugins: [
         react(),
-        babel({
-            babelHelpers: 'runtime',
-            presets: [
-                [
-                    '@babel/preset-env',
-                    {
-                        debug: true,
-                    },
-                ],
-            ],
-            plugins: [
-                [
-                    '@babel/plugin-transform-runtime',
-                    {
-                        corejs: {version: 3, proposals: true},
-                    },
-                ],
-            ],
-            extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            exclude: 'node_modules/**',
-        }),
         tsconfigPaths(),
         dts({
             include: ['src'],
@@ -56,12 +34,7 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: [
-                ...Object.keys(pkg.peerDependencies),
-                'next/image',
-                'react/jsx-runtime',
-                /@babel\/runtime-corejs3/,
-            ],
+            external: [...Object.keys(pkg.peerDependencies), 'next/image', 'react/jsx-runtime'],
             output: [
                 {
                     format: 'es',
@@ -74,5 +47,9 @@ export default defineConfig({
             ],
             plugins: [preserveDirectives()],
         },
+        target: 'ES2020',
+    },
+    esbuild: {
+        target: 'es2020',
     },
 })
