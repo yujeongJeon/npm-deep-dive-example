@@ -11,9 +11,13 @@ import pkg from './package.json'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+const SUPPORT_TARGET = 'es2020'
+
 export default defineConfig({
     plugins: [
-        react(),
+        react({
+            devTarget: SUPPORT_TARGET,
+        }),
         tsconfigPaths(),
         dts({
             include: ['src'],
@@ -47,9 +51,9 @@ export default defineConfig({
             ],
             plugins: [preserveDirectives()],
         },
-        target: 'ES2020',
+        target: SUPPORT_TARGET,
     },
     esbuild: {
-        target: 'es2020',
+        target: SUPPORT_TARGET,
     },
 })
