@@ -1,4 +1,10 @@
-# @ndive/reeact-image
+# @ndive/react-image
+
+![NPM Version](https://img.shields.io/npm/v/%40ndive%2Freact-image)
+![NPM Downloads](https://img.shields.io/npm/dw/%40ndive%2Freact-image)
+![NPM Collaborators](https://img.shields.io/npm/collaborators/%40ndive%2Freact-image)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40ndive%2Freact-image)
+![NPM Type Definitions](https://img.shields.io/npm/types/%40ndive%2Freact-image)
 
 - A comprehensive image utility kit for Next.js and React.
 - 이 패키지는 Next.js와 React를 위한 종합적인 이미지 유틸리티 키트입니다.
