@@ -98,6 +98,7 @@
         "react-dom": "^18.3.1",
         "rollup": "^4.20.0",
         "rollup-preserve-directives": "^1.1.1",
+        "terser": "^5.31.6",
         "typescript": "^5.5.4",
         "vite": "^5.4.0",
         "vite-plugin-dts": "^4.0.2",

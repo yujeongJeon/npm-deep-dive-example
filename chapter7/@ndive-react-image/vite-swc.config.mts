@@ -39,7 +39,10 @@ export default defineConfig({
             },
         },
         rollupOptions: {
-            external: [...Object.keys(pkg.peerDependencies), 'next/image', 'react/jsx-runtime'],
+            external: [...Object.keys(pkg.peerDependencies), ...Object.keys(pkg.dependencies)].flatMap((dep) => [
+                dep,
+                new RegExp(`^${dep}/.*`),
+            ]),
             output: [
                 {
                     format: 'es',
@@ -52,6 +55,7 @@ export default defineConfig({
             ],
             plugins: [preserveDirectives()],
         },
+        minify: 'terser', // or 'esbuild'
         target: SUPPORT_TARGETS,
     },
     esbuild: {
