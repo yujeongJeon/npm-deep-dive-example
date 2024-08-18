@@ -2,6 +2,7 @@ import {resolve, dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
 
 import react from '@vitejs/plugin-react-swc'
+import browserslistToEsbuild from 'browserslist-to-esbuild'
 import preserveDirectives from 'rollup-preserve-directives'
 import {defineConfig} from 'vite'
 import dts from 'vite-plugin-dts'
@@ -11,12 +12,12 @@ import pkg from './package.json'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-const SUPPORT_TARGET = 'es2020'
+const SUPPORT_TARGETS = browserslistToEsbuild()
 
 export default defineConfig({
     plugins: [
         react({
-            devTarget: SUPPORT_TARGET,
+            devTarget: 'es2020',
         }),
         tsconfigPaths(),
         dts({
@@ -51,9 +52,9 @@ export default defineConfig({
             ],
             plugins: [preserveDirectives()],
         },
-        target: SUPPORT_TARGET,
+        target: SUPPORT_TARGETS,
     },
     esbuild: {
-        target: SUPPORT_TARGET,
+        target: SUPPORT_TARGETS,
     },
 })

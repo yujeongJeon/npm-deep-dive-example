@@ -16,6 +16,8 @@
     "pnpm": "^9.6.0"
   },
   "devDependencies": {
+    "browserslist": "^4.23.3",
+    "browserslist-to-esbuild": "^2.1.1",
     "lint-staged": "^15.2.2",
     "markdownlint-cli2": "^0.12.1",
     "typescript": "^5.3.3"
