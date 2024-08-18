@@ -1,8 +1,8 @@
 import {resolve, dirname} from 'node:path'
 import {fileURLToPath} from 'node:url'
 
-import {babel} from '@rollup/plugin-babel'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
+import browserslistToEsbuild from 'browserslist-to-esbuild'
 import preserveDirectives from 'rollup-preserve-directives'
 import {defineConfig} from 'vite'
 import dts from 'vite-plugin-dts'
@@ -12,29 +12,12 @@ import pkg from './package.json'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+const SUPPORT_TARGETS = browserslistToEsbuild()
+
 export default defineConfig({
     plugins: [
-        react(),
-        babel({
-            babelHelpers: 'runtime',
-            presets: [
-                [
-                    '@babel/preset-env',
-                    {
-                        debug: true,
-                    },
-                ],
-            ],
-            plugins: [
-                [
-                    '@babel/plugin-transform-runtime',
-                    {
-                        corejs: {version: 3, proposals: true},
-                    },
-                ],
-            ],
-            extensions: ['.js', '.jsx', '.ts', '.tsx'],
-            exclude: 'node_modules/**',
+        react({
+            devTarget: 'es2020',
         }),
         tsconfigPaths(),
         dts({
@@ -73,5 +56,9 @@ export default defineConfig({
             plugins: [preserveDirectives()],
         },
         minify: 'terser', // or 'esbuild'
+        target: SUPPORT_TARGETS,
+    },
+    esbuild: {
+        target: SUPPORT_TARGETS,
     },
 })
