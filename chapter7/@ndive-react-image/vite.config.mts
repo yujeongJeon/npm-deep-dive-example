@@ -15,8 +15,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const SUPPORT_TARGETS = browserslistToEsbuild()
 
-console.log(SUPPORT_TARGETS)
-
 export default defineConfig({
     plugins: [
         react(),
