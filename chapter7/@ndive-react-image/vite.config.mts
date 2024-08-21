@@ -3,6 +3,7 @@ import {fileURLToPath} from 'node:url'
 
 import {babel} from '@rollup/plugin-babel'
 import react from '@vitejs/plugin-react'
+import browserslistToEsbuild from 'browserslist-to-esbuild'
 import preserveDirectives from 'rollup-preserve-directives'
 import {defineConfig} from 'vite'
 import dts from 'vite-plugin-dts'
@@ -11,6 +12,10 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 import pkg from './package.json'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const SUPPORT_TARGETS = browserslistToEsbuild()
+
+console.log(SUPPORT_TARGETS)
 
 export default defineConfig({
     plugins: [
@@ -73,5 +78,6 @@ export default defineConfig({
             plugins: [preserveDirectives()],
         },
         minify: 'terser', // or 'esbuild'
+        target: SUPPORT_TARGETS,
     },
 })
