@@ -1,0 +1,15 @@
+diff --git a/package.json b/package.json
+index 7e909e62263be7428c637d125e7c9d1783b7ee0c..8e2be29236f250845c2b46c67a472ead379a0f5a 100644
+--- a/package.json
++++ b/package.json
+@@ -112,8 +112,8 @@
+   },
+   "peerDependencies": {
+     "next": "^13.0.0 || ^14.0.0",
+-    "react": "^18.0.0",
+-    "react-dom": "^18.0.0"
++    "react": "^17.0.0 || ^18.0.0",
++    "react-dom": "^17.0.0 || ^18.0.0"
+   },
+   "peerDependenciesMeta": {
+     "next": {
