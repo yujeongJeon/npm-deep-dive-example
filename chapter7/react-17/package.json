@@ -4,6 +4,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build"
     },
+    "type": "module",
     "dependencies": {
         "@ndive/react-image": "^0.1.6",
         "react": "^17.0.2",
