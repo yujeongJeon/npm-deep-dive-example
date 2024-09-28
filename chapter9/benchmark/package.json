@@ -1,0 +1,20 @@
+{
+    "name": "benchmark",
+    "type": "module",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js",
+        "vitest": "vitest bench"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "tinybench": "^2.9.0",
+        "vitest": "^2.1.1"
+    },
+    "dependencies": {
+        "lodash.isempty": "^4.4.0"
+    }
+}
