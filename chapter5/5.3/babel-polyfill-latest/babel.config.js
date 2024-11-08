@@ -5,20 +5,20 @@ export default {
       [
         "@babel/preset-env",
         {
-          debug: true,
+          // debug: true, // For Debugging
           modules: false, 
         }
       ]
     ],
     plugins: [
       ["@babel/plugin-transform-runtime", 
-        {corejs: {version: 3, proposals: true}, useESModules: true} // (Not Recommended)
-        // {useESModules: true}
+        // {corejs: {version: 3, proposals: true}, useESModules: true} // (Not Recommended)
+        {useESModules: true}
       ],
-      // ["polyfill-corejs3", { 
-      //   "method": "usage-pure", 
-      //   "version": pkg.dependencies['core-js-pure'],
-      //   proposals: true,
-      // }]
+      ["polyfill-corejs3", { 
+        "method": "usage-pure", 
+        "version": pkg.dependencies['core-js-pure'],
+        proposals: true,
+      }]
     ],
 }
