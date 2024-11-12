@@ -1,10 +1,12 @@
 {
   "name": "babel-polyfill-latest",
   "version": "1.0.0",
-  "type": "module",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "babel src -d dist"
+    "clean": "rm -rf dist",
+    "build:esm": "npm run clean && babel src/esm -d dist",
+    "build:cjs": "npm run clean &&  babel src/cjs --config-file ./babel.config-cjs.js -d dist"
   },
   "author": "yujeong-jeon",
   "license": "ISC",

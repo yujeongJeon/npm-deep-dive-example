@@ -12,3 +12,5 @@ export function at(arr, index) {
 export function findLast(arr, callback) {
     return arr.findLast(callback)
 }
+
+export {default as Cat} from './classExample'
