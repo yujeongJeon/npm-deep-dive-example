@@ -1,6 +1,6 @@
-const {asyncReduce} = require('../asyncReduce')
+const {asyncReduce} = require('./asyncReduce')
 
-const {Cat} = require('../Cat')
+const {Cat} = require('./Cat')
 
 function stringMatchAll(str, regexp) {
     return Array.from(str.matchAll(regexp))
