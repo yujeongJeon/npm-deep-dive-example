@@ -1,5 +1,6 @@
+const {asyncReduce} = require('../asyncReduce')
 
-const {asyncReduce} = require('../esm/asyncReduce')
+const {Cat} = require('../Cat')
 
 function stringMatchAll(str, regexp) {
     return Array.from(str.matchAll(regexp))
@@ -16,7 +17,8 @@ function findLast(arr, callback) {
 
 module.exports = {
     asyncReduce,
+    Cat,
     stringMatchAll,
     at,
-    findLast
+    findLast,
 }

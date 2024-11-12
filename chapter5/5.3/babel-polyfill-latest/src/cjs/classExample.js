@@ -1,4 +1,4 @@
-export default class Cat {
+class Cat {
   name = ''
   constructor(name) {
     this.name = name
@@ -7,4 +7,8 @@ export default class Cat {
   grooming() {}
 
   meow() {}
+}
+
+module.exports = {
+  Cat
 }
