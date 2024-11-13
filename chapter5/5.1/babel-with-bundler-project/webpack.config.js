@@ -39,9 +39,9 @@ module.exports = (env, argv) => ({
                 "@babel/preset-env",
                 {
                   targets: {
-                    browsers: ["last 2 versions", "ie >= 11"],
+                    "ie": "11",
                   },
-                  modules: false,
+                  modules: 'auto',
                 },
               ],
             ],
