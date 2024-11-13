@@ -14,7 +14,7 @@
   "env": {
     "targets": ["ie >= 11"],
     "mode": "usage",
-    "coreJs": "3.38"
+    "coreJs": "3.39.0"
   }
   //   "minify": true
 }

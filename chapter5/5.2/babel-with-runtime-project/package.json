@@ -9,8 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@babel/runtime-corejs3": "^7.24.8",
-    "core-js": "^3.37.1"
+    "@babel/runtime-corejs3": "^7.26.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",

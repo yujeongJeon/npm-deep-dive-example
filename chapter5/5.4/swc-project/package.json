@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@swc/helpers": "^0.5.12",
-    "core-js": "^3.38.0",
+    "core-js": "^3.39.0",
     "typescript": "^5.5.4"
   }
 }
