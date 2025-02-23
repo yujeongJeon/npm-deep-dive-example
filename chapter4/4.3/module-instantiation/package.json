@@ -1,0 +1,12 @@
+{
+  "name": "module-instantiation",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "scripts": {
+    "start:esm": "node ./index.mjs",
+    "start:cjs": "node ./index.cjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
