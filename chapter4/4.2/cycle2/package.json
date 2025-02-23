@@ -1,0 +1,12 @@
+{
+  "name": "cycle2",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

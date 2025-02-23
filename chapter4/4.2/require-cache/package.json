@@ -1,0 +1,14 @@
+{
+  "name": "require-cache",
+  "type": "commonjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:index": "node ./index.js",
+    "start:resolve": "node ./resolve.js",
+    "start:core": "node ./core.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
