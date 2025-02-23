@@ -1,0 +1,16 @@
+{
+  "name": "my-package-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "my-package": "file:../my-package",
+    "my-package-cjs": "file:../my-package-cjs",
+    "my-package-esm": "file:../my-package-esm"
+  }
+}

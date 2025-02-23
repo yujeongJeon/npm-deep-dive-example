@@ -1,0 +1,11 @@
+{
+  "name": "esm-cycle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./a.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
